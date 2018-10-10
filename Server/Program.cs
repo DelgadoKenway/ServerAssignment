@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using OzToGLib; // own library
+using OzToGLib; // converter component library
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
@@ -24,8 +24,7 @@ namespace Server
                 TcpClient client = serversocket.AcceptTcpClient();
                 Console.WriteLine($"Inocming client");
 
-                Task clientTask = new Task(() => ProcessClient(client)); // ta linijka kosztowała mnie
-                //zdecydowanie za dużo nerwów :O
+                Task clientTask = new Task(() => ProcessClient(client)); 
                 clientTask.Start();
 
             }

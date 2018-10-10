@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="OzToGLib">
-      <HintPath>..\..\..\..\OzToGLib\OzToGLib\bin\Debug\OzToGLib.dll</HintPath>
+      <HintPath>..\..\..\..\OzToGLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
